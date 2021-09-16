@@ -1,0 +1,28 @@
+#Test cases
+# we will be using doctest -- read more about the doc test https://docs.python.org/3/library/doctest.html
+#import per the need
+>>> from conditionals import *  # import everything from the file conditionals
+
+### The automated testing starts here
+#######################
+Test0000
+>>> the_largest_of_three_number_without_loop(10,20,30)
+30
+
+>>> the_largest_of_three_number_without_loop(10,30,30)
+30, 30
+
+>>> the_largest_of_three_number_without_loop(30,30,30)
+30, 30, 30
+
+#######################
+Test0000  # see the google doc (https://docs.google.com/document/d/1XRa7gslVYAzl5uP-xv8L6o6PNjPwpBxGz7665a4Atr4/edit?usp=sharing) for more explanation
+## You can draw more rectangles using the following website
+## https://www.geogebra.org/
+
+>>> does_rectangles_intersect(0,0,2,2,3,3,6,6)
+False
+
+>>> does_rectangles_intersect(0,0,2,2,1,1,6,6)
+True
+

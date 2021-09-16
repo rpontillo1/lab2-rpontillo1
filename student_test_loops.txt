@@ -1,0 +1,3 @@
+# Add your test cases for functions that are in loop.py
+# This will be very similar to test_loop.txt
+# What would change is the values in the test cases

@@ -1,0 +1,67 @@
+#Test cases
+# we will be using doctest -- read more about the doc test https://docs.python.org/3/library/doctest.html
+#import per the need
+>>> from loop import *  # * means import everything from the file conditionals
+
+### The automated testing starts here
+#######################
+>>> test_loop([10,20,30,40,50,60])
+10,20,30,40,50,60,
+
+#######################
+Test0000
+>>> get_the_largest([100,200,300,30,20,10,5000,70,80])
+5000
+
+#######################
+Test0001
+>>> get_the_largest([100,200,300,30,20,10,5000,70,80,5000])
+5000, 2
+
+#######################
+Test0002
+>>> get_the_smallest([100,200,300,30,20,10,5000,70,80,5000])
+10
+
+
+#######################
+Test0003
+>>> get_the_smallest([100,200,300,30,20,10,10,5000,70,80,5000])
+10, 2
+
+#######################
+Test0004
+>>> get_the_smallest([100,200,300,30,20,10,10,-5000,70,80,5000])
+-5000
+
+
+#######################
+Test0005
+>>> get_the_sum([200,300,-200,400])
+700
+
+#######################
+Test0006
+>>> get_the_product([200,300,-200,400])
+-4800000000
+
+
+#######################
+Test0007
+>>> is_prime_algo2(83)
+True
+
+#######################
+Test0009
+>>> is_prime_algo2(84)
+False
+
+#######################
+Test00010
+>>> is_prime_algo3(97)
+True
+
+#######################
+Test00011
+>>> is_prime_algo3(108)
+False
