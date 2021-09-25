@@ -14,7 +14,23 @@ def the_largest_of_three_number_without_loop(item1, item2, item3):
     # if there are two or more largest the program should return all of them
     # You must not use loop to solve this problem
     # If you use the LOOP, zero points shall be awarded
-    pass
+
+    largest = 0
+    if item2 > item1:
+        largest = item2
+    elif item3 > item1:
+        largest = item3
+    if item3 > item2:
+        largest = item3
+    elif item2 == item3:
+        largest = item2, item3
+
+    if item1 == item2:
+        largest = item1, item2
+        if item2 == item3:
+            largest = item1, item2, item3
+    print(largest)
+>>>>>>> 4340b7c (Initial commit)
 
 
 def does_rectangles_intersect(x1, y1, x2, y2, x3, y3, x4, y4):
@@ -23,4 +39,18 @@ def does_rectangles_intersect(x1, y1, x2, y2, x3, y3, x4, y4):
     # (x3,y3), and (x4, y4) represent the coordinates of the opposite corners (lower left and upper right) the second rectangle
     # You can assume (and check if they are not) that the rectangles are parallel to x and y axes
     # This function would return either True or False depending on whether the inputted rectangles intersect or not
-    pass
+
+
+    if x2 >= x4 and y2 >= y4:
+        print("True")
+    elif x2 >= x3 and y2 >= y3:
+        print("True")
+    elif x1 >= x4 and y1 >= y4:
+        print("True")
+    elif x2 >= x4 and y2 >= y4:
+        print("true")
+    elif x1 >= x3 and y1 >= y3:
+        print("True")
+    else:
+        print("False")
+>>>>>>> 4340b7c (Initial commit)
